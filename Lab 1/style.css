@@ -1,0 +1,106 @@
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 85%;
+    border-radius: 30px;
+}
+
+body{
+  background-color: #CCCCCC;
+}
+
+/*Column and row classes taken from: https://www.w3schools.com/howto/howto_css_images_side_by_side.asp
+.row {
+    display: flex;
+  }
+  
+  .column {
+    flex: 33.33%;
+    padding: 5px;
+  }*/
+
+  .row{
+    display: flex;
+  }
+  .column {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .halfColumn{
+    flex: 50%;
+  }
+
+  .title{
+      font-weight:bold;
+      text-align:center;
+      font-family: Tahoma;
+  }
+
+  .column {
+    float: left;
+  }
+  
+  .left {
+    width: 25%;
+  }
+  
+  .right {
+    font-family: Tahoma;
+    width: 75%;
+  }
+
+  .leftSection{
+    border-right-style: solid;
+    border-right-color: coral;
+    border-right-width: 1.5px;
+    border-bottom-style: solid;
+    border-bottom-color: coral;
+    border-bottom-width: 1.5px;
+  }
+
+
+  .rightSection{
+    border-left-style: solid;
+    border-left-color: coral;
+    border-left-width: 1.5px;
+    border-bottom-style: solid;
+    border-bottom-color: coral;
+    border-bottom-width: 1.5px;
+  }
+
+  .contentList{
+    list-style: none;
+    text-align: justify;
+    color:#4F545F;
+    font-family: Verdana;
+  }
+
+  .icon{
+    width: 70px;
+    height: 70px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #name{
+    text-align:center;
+    padding:23px 0px 0px 0px;
+  }
+
+  #personalData{
+    text-align:center;
+    color:#4F545F;
+  }
+
+  #field-set{
+    border-color:blue; 
+    border-radius: 30px;
+  }
+
+  #skillsList{
+    text-align: justify;
+    color:#4F545F;
+  }
