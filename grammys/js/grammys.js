@@ -46,15 +46,24 @@ function loadData(){
                             new_html+=`<li>
                             <h4 class= "winner">${data.fields[id].categories[i].nominees[j].nominee}</h4> <span>WINNER!</span></br></br>
                             <div>${data.fields[id].categories[i].nominees[j].artist}</br></br></div>
-                            <div>${data.fields[id].categories[i].nominees[j].info}</br></br></div>
-                            </li>
+                            
                             `
                         }
                         else{
                             new_html+=`<li>
                             <h4>${data.fields[id].categories[i].nominees[j].nominee}</h4> </br></br>
                             <div>${data.fields[id].categories[i].nominees[j].artist}</br></br></div>
+                            
+                            `
+                        }
+                        if(data.fields[id].categories[i].nominees[j].info!=""){
+                            new_html+=`
                             <div>${data.fields[id].categories[i].nominees[j].info}</br></br></div>
+                            </li>
+                            `
+                        }
+                        else{
+                            new_html+=`
                             </li>
                             `
                         }
