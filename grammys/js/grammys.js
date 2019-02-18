@@ -42,7 +42,7 @@ function loadData(){
                     <ul>
                 `
                     for (let j=0; j<data.fields[id].categories[i].nominees.length; j++){
-                        if(j+1==data.fields[id].categories[i].winner_id){
+                        if(j==data.fields[id].categories[i].winner_id){
                             new_html+=`<li>
                             <h4 class= "winner">${data.fields[id].categories[i].nominees[j].nominee}</h4> <span>WINNER!</span></br></br>
                             <div>${data.fields[id].categories[i].nominees[j].artist}</br></br></div>
