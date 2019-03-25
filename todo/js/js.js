@@ -1,4 +1,4 @@
-/*
+
 document.getElementById("newitem").addEventListener("keyup", function(event){
     event.preventDefault();
     if (event.keyCode === 13 && this.value!="") {
@@ -48,13 +48,12 @@ function done(elemento){
         span[posicion].classList.remove("done");
     }
 }
-*/
 
-function done(elemento){
-}
-$('input[type="checkbox"').click(function(){
+
+
+$('input[type="checkbox"]').click(function(){
     $parent=$(this).parent();
-   /* $(this).parent().css("color", "#8f9196");
+    $(this).parent().css("color", "#8f9196");
     $(this).parent().css("text-decoration", "line-through");
     
     if($($parent).css("color")=="rgb(143, 145, 156)"){
@@ -68,9 +67,8 @@ $('input[type="checkbox"').click(function(){
             color :"8f9196",
             textDecoration:"line-through"
         });
-    }*/
-    $($parent).toggleClass("done");
+    }
+    $($parent).toggleClass("done");/*
     $($parent).fadeOut(500, function(){     //Desaparece el elemento
-        $($parent).remove();    //Remueve el elemento
-    });
+        $($parent).remove();    //Remueve el elemento*/
 })
