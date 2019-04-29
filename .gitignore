@@ -2,3 +2,5 @@ httprequest/node_modules/
 httprequest/credentials.js
 callbacks/credentials.js
 webServer/credentials.js
+mongoDB/node_modules/
+mongoDB/src/db/credentials.js
