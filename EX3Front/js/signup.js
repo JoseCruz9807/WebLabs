@@ -16,7 +16,7 @@ $('#signup_button').on('click', function(){
 
   $.ajax({
     //url: 'http://localhost:3000/users',
-     url: 'https://tuapp.herokuapp.com/users',
+     url: 'https://mini-web-server9807.herokuapp.com/users',
     headers: {
         'Content-Type':'application/json'
     },

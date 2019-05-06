@@ -12,7 +12,7 @@ $('#login_button').on('click', function(){
 
   $.ajax({
     //url: 'http://localhost:3000/users/login',
-     url: 'https://tuapp.herokuapp.com/users/login',
+    url: 'https://mini-web-server9807.herokuapp.com/users/login',
     headers: {
         'Content-Type':'application/json'
     },

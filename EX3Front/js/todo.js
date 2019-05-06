@@ -27,7 +27,7 @@ function updateTodo(elemento){//(id, completed) {
   json_to_send = JSON.stringify(json_to_send);
   $.ajax({
       //url: 'http://localhost:3000/todos/' + id,
-      url: 'https://tuapp.herokuapp.com/todos',
+      url: 'https://mini-web-server9807.herokuapp.com/todos'+id,
       headers: {
           'Content-Type':'application/json',
           'Authorization': 'Bearer ' + token
@@ -48,7 +48,7 @@ function updateTodo(elemento){//(id, completed) {
 function loadTodos() {
   $.ajax({
     //url: 'http://localhost:3000/todos',
-    url: 'https://tuapp.herokuapp.com/todos',
+    url: 'https://mini-web-server9807.herokuapp.com/todos',
     headers: {
         'Content-Type':'application/json',
         'Authorization': 'Bearer ' + token
@@ -92,7 +92,7 @@ input.addEventListener('keypress', function (event) {
     json_to_send = JSON.stringify(json_to_send);
     $.ajax({
       //url: 'http://localhost:3000/todos',
-       url: 'https://tuapp.herokuapp.com/todos',
+       url: 'https://mini-web-server9807.herokuapp.com/todos',
       headers: {
           'Content-Type':'application/json',
           'Authorization': 'Bearer ' + token
